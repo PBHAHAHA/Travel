@@ -42,6 +42,10 @@ export default {
   },
   activated () {
     window.addEventListener('scroll', this.handleScroll)
+  },
+  // 对全局事件解绑，否则在其他页面上下移动也会触发上面的事件
+  deactivated () {
+    window.addEventListener('scroll', this.handleScroll)
   }
 }
 </script>
