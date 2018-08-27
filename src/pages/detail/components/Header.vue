@@ -13,7 +13,6 @@
       </router-link>
       景点详情
     </div>
-    <div class="a"></div>
   </div>
 </template>
 <script>
@@ -64,6 +63,7 @@ export default {
     .header-abs-back
       color #fff
   .header-fixed
+    z-index 2
     position fixed
     top 0
     left 0
@@ -82,6 +82,4 @@ export default {
       position absolute
       top 0
       left 0
-  .a
-    height 100rem
 </style>
